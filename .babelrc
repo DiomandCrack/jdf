@@ -1,0 +1,17 @@
+{
+    "presets": [
+        "env",
+        "react-app"
+    ],
+    "plugins": [
+        ["transform-class-properties"],
+        ["transform-decorators-legacy"],
+        ["react-css-modules", {
+            "filetypes": {
+                ".scss": {
+                    "syntax": "postcss-scss"
+                }
+            }
+        }]
+    ]
+}

@@ -1,0 +1,21 @@
+@import '../../../core/layout/element.scss';
+.slider {
+    margin-top: 120px;
+}
+
+.list {
+    @include list(row);
+    background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    text-decoration: none;
+    .list-item {
+        text-align: center;
+        img {
+            display: inline-block;
+            width: 9px;
+            height: 90px;
+        }
+    }
+}

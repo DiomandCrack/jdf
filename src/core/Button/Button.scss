@@ -1,0 +1,4 @@
+@import '../layout/element.scss';
+.btn {
+    @include btn
+}
