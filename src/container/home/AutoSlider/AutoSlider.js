@@ -60,7 +60,7 @@ export default class AutoSlider extends Component {
                     {this.state.selectList.map((item)=>(
                         <Link to='/' key={item.src} className='list-item'>
                             <img src={item.src} alt={item.title}/>
-                            <span>{item.title}</span>
+                            <span className='list-text'>{item.title}</span>
                         </Link>))}
                 </section>
             </article>
