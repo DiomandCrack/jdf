@@ -1,27 +1,4 @@
-@import '../../../core/layout/element.scss';
 .crowdfunding {
-    position: relative;
-    background: #fff;
-    padding-bottom: 40px;
-    .swiper-container {
-        padding: 0 24px;
-        box-sizing: border-box;
-        .swiper-slide {
-            a {
-                display: inline-block;
-                width: 100%;
-            }
-            img {
-                width: 100%;
-                display: block;
-                height: 314px;
-                border: 1px solid #fafafa;
-            }
-        }
-    }
-    .panel {
-        @include panel;
-    }
     .arrow {
         position: absolute;
         font-size: 28px;

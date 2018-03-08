@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Slider from '../../core/Slider/Slider'
+import './SlidesPreView.css'
 export default class SlidesPreView extends Component {
     static defaultProps = {
         params:{
@@ -11,7 +12,7 @@ export default class SlidesPreView extends Component {
 
     render() {
         return (
-            <div className='slides-pre-view'>
+            <div className={`slides-pre-view ${this.props.className?this.props.className:''}`}>
                 <Slider params={this.props.params}>
                     {this.props.children}
                 </Slider>
