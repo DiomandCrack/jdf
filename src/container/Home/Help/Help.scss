@@ -1,0 +1,9 @@
+@import '../../../core/Panel/Panel.scss';
+.help {
+    .panel {
+        @include panel
+    }
+    img {
+        width: 100%;
+    }
+}
