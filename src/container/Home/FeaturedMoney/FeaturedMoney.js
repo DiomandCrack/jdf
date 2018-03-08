@@ -38,7 +38,7 @@ export default class FeaturedMoney extends Component {
                     <section className="content">
                         {this.state.data.map(item=>(
                             <dl key={item.title} className='item'>
-                                <dt>{item.title}<span>{item.sub}</span></dt>
+                                <dt>{item.title}&nbsp;<span>{item.sub}</span></dt>
                                 <dd>{item.rate}</dd>
                                 <dd>{item.text}</dd>
                             </dl>

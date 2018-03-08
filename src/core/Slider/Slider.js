@@ -22,7 +22,7 @@ export default class Slider extends Component {
         return (
         <section className={`slider ${this.props.className}`}>
             <Swiper {...this.props.swiperParams}>
-                {this.props.imgs.map(item=>(<div key={item.src} ><img src={item.src} alt={item.title} /></div>))}
+                {this.props.children}
             </Swiper>
         </section>
         )

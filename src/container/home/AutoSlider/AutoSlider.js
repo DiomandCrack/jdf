@@ -58,6 +58,7 @@ export default class AutoSlider extends Component {
         return (
             <article>
                 <Slider imgs={this.state.imgSrc} className='auto-slider'>
+                    {this.state.imgSrc.map(item=>(<div key={item.src} ><img src={item.src} alt={item.title} /></div>))}
                 </Slider>
                 <section className="list">
                     {/* <Route path='/' component={Home}></Route> */}
