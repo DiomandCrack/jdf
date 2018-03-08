@@ -5,10 +5,11 @@ import FeaturedMoney from './FeaturedMoney/FeaturedMoney'
 import Crowdfunding from './Crowdfunding/Crowdfunding'
 import Insurance from './Insurance/Insurance'
 import Help from './Help/Help'
+import Life from './Life/Life'
 // import NewHand from './NewHand/NewHand'
 // import QuickBorrow from './QuickBorrow/QuickBorrow'
 
-export default class componentName extends Component {
+export default class Home extends Component {
     render() {
         return (
         <div>
@@ -19,6 +20,7 @@ export default class componentName extends Component {
             <Crowdfunding/>
             <Insurance/>
             <Help/>
+            <Life/>
         </div>
         )
     }
