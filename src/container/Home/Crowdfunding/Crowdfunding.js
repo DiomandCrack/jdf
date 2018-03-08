@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Route,Link} from 'react-router-dom'
 
-import Slider from '../../../core/Slider/Slider'
+import SlidePreView from '../../../component/SlidesPreView/SlidesPreView'
 import Panel from '../../../core/Panel/Panel'
 import Home from '../Home'
 
@@ -33,30 +33,21 @@ export default class Crowdfunding extends Component {
         ],
     }
     render() {
-        const params = {
-            pagination:{
-                el:'.swiper-pagination',
-                clickable:false,
-            },
-            slidesPerView:2.3,
-            spaceBetween:30,
-            freeMode:true, 
-        };
         return (
             <div className='crowdfunding'>
                 <div className="arrow">
                     <Link to='/'>更多尖货></Link>
                 </div>
                 <Panel title='众筹新品'>
-                    <Slider  params={params} className="crowdfunding-slider">
+                    <SlidePreView className="crowdfunding-slider">
                         {this.state.data.map((item)=>(
-                            <Link to='/'>
-                                <div key={item.src}>
-                                    <img src={item.src} alt={item.title} />
-                                </div>
-                            </Link>
+                                <Link to='/'  key={item.src}>
+                                    <div>
+                                        <img src={item.src} alt={item.title} />
+                                    </div>
+                                </Link>
                         ))}
-                    </Slider>
+                    </SlidePreView>
                 </Panel>
             </div>
         )
