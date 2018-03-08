@@ -1,0 +1,23 @@
+@import '../../../core/layout/element.scss';
+.crowdfunding-slider {
+    .swiper-container {
+        box-sizing: border-box;
+        padding: 0 24px;
+        background: #fff;
+        .swiper-slide {
+            a {
+                display: inline-block;
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                display: block;
+                height: 314px;
+                border: 1px solid #fafafa;
+            }
+        }
+    }
+    .panel {
+        @include panel;
+    }
+}

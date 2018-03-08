@@ -1,8 +1,4 @@
 @import '../layout/element.scss';
-.slider {
-    margin-top: 120px;
-}
-
 .list {
     @include list(row);
     background: #ffffff;

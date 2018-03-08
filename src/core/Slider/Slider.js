@@ -5,7 +5,7 @@ import '../../../node_modules/react-id-swiper/src/styles/css/swiper.css'
 export default class Slider extends Component {
    
     static defaultProps={
-        swiperParams:{
+        params:{
             autoplay:{
                 delay:3000,
             },
@@ -18,10 +18,9 @@ export default class Slider extends Component {
         }
     }
     render() {
-        console.log(this.props.children)
         return (
         <section className={`slider ${this.props.className}`}>
-            <Swiper {...this.props.swiperParams}>
+            <Swiper {...this.props.params}>
                 {this.props.children}
             </Swiper>
         </section>
