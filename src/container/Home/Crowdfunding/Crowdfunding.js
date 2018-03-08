@@ -44,13 +44,20 @@ export default class Crowdfunding extends Component {
         };
         return (
             <div className='crowdfunding'>
-                <Slider title='众筹新品' params={params} className="crowdfunding-slider">
-                    {this.state.data.map((item)=>(
-                        <div key={item.src}>
-                            <img src={item.src} alt={item.title} />
-                        </div>
-                    ))}
-                </Slider>
+                <div className="arrow">
+                    <Link to='/'>更多尖货></Link>
+                </div>
+                <Panel title='众筹新品'>
+                    <Slider  params={params} className="crowdfunding-slider">
+                        {this.state.data.map((item)=>(
+                            <Link to='/'>
+                                <div key={item.src}>
+                                    <img src={item.src} alt={item.title} />
+                                </div>
+                            </Link>
+                        ))}
+                    </Slider>
+                </Panel>
             </div>
         )
     }
