@@ -1,26 +1,28 @@
 @import '../../../core/layout/element.scss';
-.panel {
-    @include panel;
-    .content {
-        @include flex(row);
-        box-sizing: border-box;
-        padding-bottom: 40px;
-        .item {
-            width: 20%;
-            text-align: center;
-            img {
-                width: 90px;
-                height: 90px;
-            }
-            p {
-                font-size: 26px;
-                color: #666;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-                margin-top: 12px;
-                &.sub {
-                    color: #ff801A;
+.life {
+    .panel {
+        @include panel;
+        .content {
+            @include flex(row);
+            box-sizing: border-box;
+            padding-bottom: 40px;
+            .item {
+                width: 20%;
+                text-align: center;
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
+                p {
+                    font-size: 26px;
+                    color: #666;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    margin-top: 12px;
+                    &.sub {
+                        color: #ff801A;
+                    }
                 }
             }
         }

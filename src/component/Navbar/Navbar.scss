@@ -1,0 +1,28 @@
+@import '../../core/layout/element.scss';
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background: #fff;
+    z-index: 100;
+    .panel {
+        @include panel;
+        margin: 0;
+        font-size: 22px;
+        color: #656565;
+        ul {
+            @include list(row);
+            justify-content: space-around;
+            img {
+                margin-top: 12px;
+                width: 44px;
+                height: 44px;
+            }
+            p {
+                line-height: 1.2;
+            }
+        }
+    }
+}

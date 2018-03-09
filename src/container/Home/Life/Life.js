@@ -33,7 +33,7 @@ export default class Life extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='life'>
                 <Panel title='生活服务'>
                     <ul className='content'>
                         {this.state.data.map(item=>(
