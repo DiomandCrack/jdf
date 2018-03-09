@@ -1,0 +1,48 @@
+@import '../../../core/layout/element.scss';
+.finance {
+    .money-ticks {
+        .panel {
+            @include panel;
+            .item {
+                @include list(row);
+                align-items: center;
+                height: 140px;
+                &:not(:last-child):after {
+                    content: '';
+                    height: 0;
+                    width: 100%;
+                    border-bottom: 1px solid #ddd;
+                    margin-left: 150px;
+                    position: relative;
+                    bottom: 0;
+                }
+                >img {
+                    width: 88px;
+                    height: 88px;
+                    display: inline-block;
+                    margin: 0 32px;
+                }
+                >div {
+                    width: 344px;
+                    h4 {
+                        font-size: 32px;
+                        color: #333;
+                        line-height: 1.8;
+                    }
+                    p {
+                        color: #ff3232;
+                        font-size: 24px;
+                        line-height: 1.1;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+                >em {
+                    color: #ff801A;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}

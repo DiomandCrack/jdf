@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Help.css'
-import Panel from '../../../core/Panel/Panel'
+import Panel from '../../core/Panel/Panel'
 import {Link,Route} from 'react-router-dom'
 export default class Help extends Component {
     render() {

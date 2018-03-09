@@ -27,7 +27,7 @@ export default class Navbar extends Component {
                 title:'白条',
                 src:'//img12.360buyimg.com/jrpmobile/jfs/t3343/179/621044750/1484/5af6b11a/580f50e4N005181d0.png?width=66&height=66',
                 active:'//img12.360buyimg.com/jrpmobile/jfs/t4114/213/1539606521/1876/9f736561/587d8deaNf7f37693.png?width=66&height=66',
-                redirectTo:'/whitepage',
+                redirectTo:'/whitenote',
             },
             {
                 title:'众筹',
