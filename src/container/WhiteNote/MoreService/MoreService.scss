@@ -1,0 +1,21 @@
+@import '../../../core/Panel/Panel.scss';
+.white-note {
+    .more-service {
+        ul {
+            @include list(row);
+            li {
+                width: 25%;
+                text-align: center;
+                padding-bottom: 40px;
+                &>img {
+                    width: 90px;
+                    height: 90px;
+                }
+                &>p {
+                    font-size: 26px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+}

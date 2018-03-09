@@ -24,7 +24,7 @@ export default class NoteBonus extends Component {
             <div className='note-bonus'>
                 <Panel title='白条福利'>
                     {this.state.data.map(item=>(
-                        <div className='item'>
+                        <div className='item' key={item.title}>
                             <img src={item.img} alt={item.title}/>
                             <div>
                                 <h4>{item.title}</h4>
