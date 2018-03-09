@@ -1,11 +1,13 @@
 @import '../../../core/layout/element.scss';
-.quick-borrow {
-    @include panel;
-    .content {
-        padding-bottom: 40px;
-        img {
-            display: block;
-            width: 100%;
+.home {
+    .quick-borrow {
+        @include panel;
+        .content {
+            padding-bottom: 40px;
+            img {
+                display: block;
+                width: 100%;
+            }
         }
     }
 }

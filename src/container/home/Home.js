@@ -13,7 +13,7 @@ import Footer from '../../component/Footer/Footer'
 export default class Home extends Component {
     render() {
         return (
-        <div>
+        <div className='home'>
             <AutoSlider/>
             {/* <NewHand/>
             <QuickBorrow/> */}
