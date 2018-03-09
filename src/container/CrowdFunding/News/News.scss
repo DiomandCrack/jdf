@@ -1,0 +1,21 @@
+.crowd-funding {
+    .news {
+        .content {
+            overflow: hidden;
+            font-size: 28px;
+            color: #333;
+            line-height: 72px;
+            box-sizing: border-box;
+            padding-left: 178px;
+            background: url(//m.jr.jd.com/spe/qyy/main/images/scroll_title_img.png) left top no-repeat;
+            .swiper-container-vertical {
+                height: 72px;
+            }
+            i {
+                float: right;
+                color: #ddd;
+                margin-right: 20px;
+            }
+        }
+    }
+}

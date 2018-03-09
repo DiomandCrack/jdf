@@ -19,7 +19,7 @@ export default class Slider extends Component {
     }
     render() {
         return (
-        <section className={`slider ${this.props.className}`}>
+        <section className={`slider ${this.props.className?this.props.className:''}`}>
             <Swiper {...this.props.params}>
                 {this.props.children}
             </Swiper>
