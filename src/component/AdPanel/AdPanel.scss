@@ -1,11 +1,9 @@
 @import '../../core/layout/element.scss';
-.finance {
-    .load-info {
-        .panel {
-            @include panel;
-            img {
-                width: 100%;
-            }
+.load-info {
+    .panel {
+        @include panel;
+        img {
+            width: 100%;
         }
     }
 }

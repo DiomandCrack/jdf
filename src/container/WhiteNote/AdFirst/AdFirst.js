@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import AdPanel from '../../../component/AdPanel/AdPanel'
 
-import './AdFirst.css'
 export default class AdFirst extends Component {
     state={
         img:{
