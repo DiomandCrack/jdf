@@ -1,0 +1,38 @@
+@import '../../../core/layout/element.scss';
+.download {
+    height: 100%;
+    .panel {
+        @include panel;
+        margin: 0;
+        .content {
+            @include list(column);
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            background: url(https://img12.360buyimg.com/jrpmobile/jfs/t8956/285/1249806938/50853/8cd3c8f0/59b65f36N05367075.png?) center center no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 1136px;
+            margin-top: -200px;
+        }
+        .btn-con {
+            padding-bottom: 200px;
+            text-align: center;
+            background: #ffffff;
+        }
+        .btn-con p {
+            @include btn($size: 32px, $color: #fff, $bgcolor: #f1442e, $padding: 5px, $radius: 5px);
+            line-height: 100px;
+            width: 471px;
+            background-image: linear-gradient(270deg, #f55c33 0, #ee2d1b, 75%);
+            box-shadow: 0 6px 16px 0 rgba(255, 159, 135, 0.6)
+        }
+        .text {
+            position: fixed;
+            bottom: 16px;
+            font-size: 20px;
+            color: #eee;
+        }
+    }
+}
