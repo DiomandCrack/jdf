@@ -1,0 +1,30 @@
+@import '../../../core/layout/element.scss';
+.crowd-funding {
+    .more {
+        position: relative;
+        .content {
+            @include list(row);
+            padding-bottom: 60px;
+            justify-content: space-between;
+            .item {
+                width: 33.33%;
+                img {
+                    width: 100%;
+                }
+            }
+            span {
+                position: absolute;
+                right: 0;
+                top: 0;
+                line-height: 112px;
+                font-size: 28px;
+                color: #999;
+                margin-right: 8px;
+                i {
+                    font-style: normal;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

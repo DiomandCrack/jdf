@@ -3,6 +3,8 @@ import AdFirst from './AdFirst/AdFirst'
 import News from './News/News'
 // import Daliy from './Daliy/Daliy'
 import In from './In/In'
+import More from './More/More'
+import Footer from '../../component/Footer/Footer'
 export default class CrowdFunding extends Component {
     render() {
         return (
@@ -11,6 +13,8 @@ export default class CrowdFunding extends Component {
                 <AdFirst/>
                 {/* <Daliy/> */}
                 <In/>
+                <More/>
+                <Footer/>
             </div>
         )
     }

@@ -19,9 +19,9 @@ export default class In extends Component {
                     {
                         title:'胶囊咖啡机',
                         src:'//img30.360buyimg.com/cf/s250x250_jfs/t16168/161/1968909024/148686/2a85179/5a7be4bdN01533e62.jpg',
-                        progress:'29',
+                        progress:'29%',
                         price:'11.00',
-                        end:true,
+                        end:false,
                         elite:false,
                     }
                 ]
@@ -29,11 +29,11 @@ export default class In extends Component {
             },
             {
                 title:'智能',
-                src:'https://img12.360buyimg.com/jrpmobile/jfs/t3739/82/2244582797/54399/746c7d79/5846a953N66b67d05.png?width=750&height=200',
+                src:'//img12.360buyimg.com/jrpmobile/jfs/t3739/82/2244582797/54399/746c7d79/5846a953N66b67d05.png?width=750&height=200',
                 list:[
                     {
                         title:'智能后视镜',
-                        src:'https://img30.360buyimg.com/cf/s250x250_jfs/t13834/192/2625202072/70435/e5b85a62/5a460eefN94289190.jpg',
+                        src:'//img30.360buyimg.com/cf/s250x250_jfs/t13834/192/2625202072/70435/e5b85a62/5a460eefN94289190.jpg',
                         progress:'175%',
                         price:'90.00',
                         end:true,
@@ -41,7 +41,7 @@ export default class In extends Component {
                     },
                     {
                         title:'GPD口袋电脑',
-                        src:'https://img30.360buyimg.com/cf/s250x250_jfs/t5827/255/6140287884/111611/498f9693/59683808N9253369f.jpg',
+                        src:'//img30.360buyimg.com/cf/s250x250_jfs/t5827/255/6140287884/111611/498f9693/59683808N9253369f.jpg',
                         progress:'0',
                         price:'75.00',
                         end:false,
@@ -52,11 +52,11 @@ export default class In extends Component {
             },
             {
                 title:'美食',
-                src:'https://img12.360buyimg.com/jrpmobile/jfs/t3214/113/4408032436/61548/ce316eef/5846d310Ne93f00c9.png?width=750&height=200',
+                src:'//img12.360buyimg.com/jrpmobile/jfs/t3214/113/4408032436/61548/ce316eef/5846d310Ne93f00c9.png?width=750&height=200',
                 list:[
                     {
                         title:'层层轻薄雪花酥',
-                        src:'https://img30.360buyimg.com/cf/s250x250_jfs/t19087/67/359234055/152112/75036460/5a6ecc5fN565775cd.jpg',
+                        src:'//img30.360buyimg.com/cf/s250x250_jfs/t19087/67/359234055/152112/75036460/5a6ecc5fN565775cd.jpg',
                         progress:'377%',
                         price:'29.00',
                         end:false,
@@ -64,7 +64,7 @@ export default class In extends Component {
                     },
                     {
                         title:'胶囊咖啡机',
-                        src:'https://img30.360buyimg.com/cf/s250x250_jfs/t14506/168/2096353267/153845/5bb0a2e6/5a6e9518N15da6f7c.jpg',
+                        src:'//img30.360buyimg.com/cf/s250x250_jfs/t14506/168/2096353267/153845/5bb0a2e6/5a6e9518N15da6f7c.jpg',
                         progress:'273%',
                         price:'29.00',
                         end:false,
