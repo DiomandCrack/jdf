@@ -1,32 +1,11 @@
 import React, { Component } from 'react'
 import Panel from '../../core/Panel/Panel'
-import {Link,Route,withRouter} from 'react-router-dom'
+import {NavLink,withRouter} from 'react-router-dom'
 import {Map,is,toJS,List} from 'immutable'
 import './Navbar.css'
 
 @withRouter
 export default class Navbar extends Component {
-    componentWillMount(){
-        this.setState((state)=>{
-            state.icon.forEach(el => {
-                console.log(this.props.location.pathname,el.redirectTo)
-                if(this.props.location.pathname===el.redirectTo){
-                    console.log(el)
-                    el.active=true
-                }
-            })
-        })
-    }
-
-    handleActive =(item,i)=>{
-        this.setState((state)=>{
-            state.icon.forEach(el => {
-                el.active=false;
-            });
-            state.icon[i].active=true;
-        })
-        console.log(this.state)
-    }
     state={
         icon:[
             {
@@ -73,10 +52,10 @@ export default class Navbar extends Component {
                 <Panel>
                     <ul className='content'>
                         {this.state.icon.map((item,i)=>(
-                            <Link to={item.redirectTo} key={item.title} onClick={()=>{this.handleActive(item,i)}}>
-                                <img src={item.active?item.activeImg:item.src} alt={item.title}/>
-                                <p className={item.active?'red':''}>{item.title}</p>
-                            </Link>
+                            <NavLink exact to={item.redirectTo} key={item.title}>
+                                <img src={this.props.location.pathname===item.redirectTo?item.activeImg:item.src} alt={item.title}/>
+                                <p>{item.title}</p>
+                            </NavLink>
                         ))}
                     </ul>
                 </Panel>
