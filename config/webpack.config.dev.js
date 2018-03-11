@@ -187,6 +187,13 @@ module.exports = {
                   ],
                 },
               },
+              {
+                loader:require.resolve('px2rem-loader'),
+                options:{
+                    remUnit:40,
+                    remPrecision:8
+                }
+                },
             ],
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.

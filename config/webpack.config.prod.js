@@ -205,6 +205,13 @@ module.exports = {
                         ],
                       },
                     },
+                    {
+                        loader:require.resolve('px2rem-loader'),
+                        options:{
+                            remUnit:75,
+                            remPrecision:8
+                        }
+                    },
                   ],
                 },
                 extractTextPluginOptions
